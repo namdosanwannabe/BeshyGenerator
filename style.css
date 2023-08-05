@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Code Pro', monospace;
+}
+
+body {
+  height: 100vh;
+  background-color: #323437;
+  color: #d1d0c5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+.message {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #e2b714;
+  color: #2c2e31;
+}
+.close-message {
+  font-size: 2rem;
+  color: #2c2e31;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+textarea {
+  height: 20vh;
+  width: 700px;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  padding: 10px;
+  resize: none;
+  overflow: auto;
+  outline: none;
+}
+
+.btn {
+  width: 150px;
+  font-size: 1.3rem;
+  padding: 15px;
+  cursor: pointer;
+  background-color: #2c2e31;
+  border-radius: 10px;
+  border: 0;
+  color: #e2b714;
+}
+.btn:hover {
+  background-color: #3b3c3f;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+.credits {
+  position: absolute;
+  bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  textarea {
+    width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    gap: 3%;
+  }
+  textarea {
+    width: 450px;
+  }
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  textarea {
+    width: 350px;
+  }
+  h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
